@@ -28,7 +28,7 @@ on:
         description: 'HCLOUD_CLI_VERSION'
         required: false
         type: string
-        default: 'v1.66.0'
+        default: 'v1.67.0'
       HELM_CLI_VERSION:
         description: 'HELM_CLI_VERSION'
         required: false
