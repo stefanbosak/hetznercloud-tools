@@ -28,7 +28,7 @@
 | **Terraform** | [`1.16.0-beta1`](https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta1) |
 | **Terragrunt** | [`v1.1.1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.1) |
 
-> 🔄 Last updated: 2026-07-23T20:41:52+02:00 · [Build #8](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/30094033197)
+> 🔄 Last updated: 2026-07-24T14:45:06+02:00 · [Build #9](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/30102392067)
 <!-- VERSION_INFO_END -->
 
 ---
