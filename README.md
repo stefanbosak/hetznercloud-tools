@@ -29,7 +29,7 @@
 | **OpenTofu** | [`1.12.5`](https://github.com/opentofu/opentofu/releases/tag/v1.12.5) |
 | **Terragrunt** | [`v1.1.2`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.2) |
 
-> 🔄 Last updated: 2026-08-05T23:02:51+02:00 · [Build #34](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/31102917665)
+> 🔄 Last updated: 2026-08-06T14:50:58+02:00 · [Build #35](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/31143620897)
 <!-- VERSION_INFO_END -->
 
 ---
