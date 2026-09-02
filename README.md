@@ -16,20 +16,20 @@
 <!-- VERSION_INFO_START -->
 | Component | Version |
 |-----------|---------|
-| **Ansible** | [`v2.21.3`](https://github.com/ansible/ansible/releases/tag/v2.21.3) |
+| **Ansible** | [`v2.21.4rc1`](https://github.com/ansible/ansible/releases/tag/v2.21.4rc1) |
 | **cert-manager CLI** | [`v2.5.0`](https://github.com/cert-manager/cmctl/releases/tag/v2.5.0) |
 | **hcloud CLI** | [`v1.67.0`](https://github.com/hetznercloud/cli/releases/tag/v1.67.0) |
-| **Helm** | [`v4.2.4`](https://github.com/helm/helm/releases/tag/v4.2.4) |
+| **Helm** | [`v4.3.0-rc.1`](https://github.com/helm/helm/releases/tag/v4.3.0-rc.1) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
-| **Kops** | [`v1.36.2`](https://github.com/kubernetes/kops/releases/tag/v1.36.2) |
-| **Kubectl** | [`v1.37.0-rc.0`](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.0) |
+| **Kops** | [`v1.37.0-beta.1`](https://github.com/kubernetes/kops/releases/tag/v1.37.0-beta.1) |
+| **Kubectl** | [`v1.37.0`](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0) |
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
-| **SwarmCLI** | [`v1.14.0-rc3`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v1.14.0-rc3) |
-| **Terraform** | [`1.17.0-alpha20260812`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260812) |
-| **OpenTofu** | [`1.12.5`](https://github.com/opentofu/opentofu/releases/tag/v1.12.5) |
-| **Terragrunt** | [`v1.1.3`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.3) |
+| **SwarmCLI** | [`v2.0.0-rc4`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.0.0-rc4) |
+| **Terraform** | [`1.16.1`](https://github.com/hashicorp/terraform/releases/tag/v1.16.1) |
+| **OpenTofu** | [`1.13.0-beta1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1) |
+| **Terragrunt** | [`v1.1.4`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.4) |
 
-> 🔄 Last updated: 2026-08-13T10:43:09+02:00 · [Build #45](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/31720770438)
+> 🔄 Last updated: 2026-08-13T23:53:04+02:00 · [Build #68](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/33675521527)
 <!-- VERSION_INFO_END -->
 
 ---
