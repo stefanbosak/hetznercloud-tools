@@ -37,6 +37,9 @@ ARG KUBECTL_CLI_VERSION=v1.36.2
 # Kustomize version
 ARG KUSTOMIZE_CLI_VERSION=5.8.1
 
+# Sofka version
+ARG SOFKA_CLI_VERSION=v0.28.3
+
 # SwarmCLI version
 ARG SWARM_CLI_VERSION=v1.12.0
 
@@ -279,6 +282,29 @@ RUN mkdir -p "/usr/local/bin/" && tar -xvf "${WORKSPACE_ROOT_DIR}/kustomize_v${K
 
 
 # container as builder for preparing Hetzner Cloud tools
+FROM hetznercloud-tools-builder AS hetznercloud-tools-sofka-builder
+
+LABEL stage="hetznercloud-tools-sofka-builder" \
+      description="Debian-based container builder for preparing Hetzner Cloud tool sofka CLI" \
+      org.opencontainers.image.description="Debian-based container builder for preparing Hetzner Cloud tool sofka CLI" \
+      org.opencontainers.image.url=https://github.com/stefanbosak/hetznercloud-tools \
+      org.opencontainers.image.source=https://github.com/stefanbosak/hetznercloud-tools
+
+ARG TARGETOS
+ARG TARGETARCH
+ARG SOFKA_CLI_VERSION
+
+ARG WORKSPACE_ROOT_DIR
+WORKDIR "${WORKSPACE_ROOT_DIR}"
+
+# download sofka CLI archive file
+RUN uri=$(echo "https://github.com/nklmilojevic/sofka/releases/download/${SOFKA_CLI_VERSION}/sofka-${SOFKA_CLI_VERSION}-${TARGETARCH}-unknown-linux-gnu.tar.gz" | sed 's/amd64/x86_64/g;s/arm64/aarch64/g') && curl -sSL "${uri}" -o "${WORKSPACE_ROOT_DIR}/sofka.tar.gz"
+
+# install sofka
+RUN mkdir -p "/usr/local/bin/" && tar -xvf "${WORKSPACE_ROOT_DIR}/sofka.tar.gz" -C "/usr/local/bin" --no-anchored "sofka"
+
+
+# container as builder for preparing Hetzner Cloud tools
 FROM hetznercloud-tools-builder AS hetznercloud-tools-swarmcli-builder
 
 LABEL stage="hetznercloud-tools-swarmcli-builder" \
@@ -382,6 +408,7 @@ COPY --from=hetznercloud-tools-k9s-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-kops-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-kubectl-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-kustomize-builder "/usr/local/bin/" "/usr/local/bin/"
+COPY --from=hetznercloud-tools-sofka-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-swarmcli-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-terraform-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-tofu-builder "/usr/local/bin/" "/usr/local/bin/"
@@ -502,6 +529,7 @@ RUN if getent group "${CONTAINER_GROUP_ID}" > /dev/null; then \
     sed -i 's/kubectl/k/g' "/usr/share/bash-completion/completions/k" && \
     ln -s /usr/local/bin/kubectl /usr/local/bin/k && \
     kustomize completion bash > "/usr/share/bash-completion/completions/kustomize" && \
+    sofka completion bash > "/usr/share/bash-completion/completions/sofka" && \
     echo "complete -C terraform terraform" > "/usr/share/bash-completion/completions/terraform" && \
     echo "complete -C tofu tofu" > "/usr/share/bash-completion/completions/tofu" && \
     echo "complete -C terragrunt terragrunt" > "/usr/share/bash-completion/completions/terragrunt" && \
