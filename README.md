@@ -26,10 +26,10 @@
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
 | **SwarmCLI** | [`v2.1.1`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.1.1) |
 | **Terraform** | [`1.16.3`](https://github.com/hashicorp/terraform/releases/tag/v1.16.3) |
-| **OpenTofu** | [`1.13.0-rc1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.0-rc1) |
+| **OpenTofu** | [`1.12.6`](https://github.com/opentofu/opentofu/releases/tag/v1.12.6) |
 | **Terragrunt** | [`v1.1.5`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.5) |
 
-> 🔄 Last updated: 2026-09-18T08:40:57+02:00 · [Build #111](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/35380119802)
+> 🔄 Last updated: 2026-09-18T20:30:19+02:00 · [Build #112](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/35600069996)
 <!-- VERSION_INFO_END -->
 
 ---
