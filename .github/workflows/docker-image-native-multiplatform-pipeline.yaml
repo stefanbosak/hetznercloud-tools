@@ -48,7 +48,7 @@ on:
         description: 'KUBECTL_CLI_VERSION'
         required: false
         type: string
-        default: 'v1.37.0'
+        default: 'v1.37.1'
       KUSTOMIZE_CLI_VERSION:
         description: 'KUSTOMIZE_CLI_VERSION'
         required: false
@@ -58,7 +58,7 @@ on:
         description: 'SOFKA_CLI_VERSION'
         required: false
         type: string
-        default: 'v0.28.5'
+        default: 'v0.29.0'
       SWARM_CLI_VERSION:
         description: 'SWARM_CLI_VERSION'
         required: false
@@ -68,7 +68,7 @@ on:
         description: 'TERRAFORM_CLI_VERSION'
         required: false
         type: string
-        default: '1.16.4'
+        default: '1.17.0-beta2'
       OPENTOFU_CLI_VERSION:
         description: 'OPENTOFU_CLI_VERSION'
         required: false
