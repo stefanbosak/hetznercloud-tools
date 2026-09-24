@@ -28,7 +28,7 @@ on:
         description: 'HCLOUD_CLI_VERSION'
         required: false
         type: string
-        default: 'v1.68.0'
+        default: 'v1.69.0'
       HELM_CLI_VERSION:
         description: 'HELM_CLI_VERSION'
         required: false
@@ -73,12 +73,12 @@ on:
         description: 'OPENTOFU_CLI_VERSION'
         required: false
         type: string
-        default: '1.12.6'
+        default: '1.13.0-rc1'
       TERRAGRUNT_CLI_VERSION:
         description: 'TERRAGRUNT_CLI_VERSION'
         required: false
         type: string
-        default: 'v1.1.6'
+        default: 'v1.2.0-rc1'
       CONTAINER_TAG:
         description: 'CONTAINER_TAG'
         required: false
