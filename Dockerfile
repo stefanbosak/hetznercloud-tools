@@ -31,6 +31,9 @@ ARG K9S_CLI_VERSION=v0.51.0
 # kops version
 ARG KOPS_CLI_VERSION=v1.36.0-beta.1
 
+# kpt version
+ARG KPT_CLI_VERSION=v1.0.1
+
 # kubectl version
 ARG KUBECTL_CLI_VERSION=v1.36.2
 
@@ -236,6 +239,29 @@ RUN mkdir -p "/usr/local/bin/" && install -v -o root -g root -m 0755 "${WORKSPAC
 
 
 # container as builder for preparing Hetzner Cloud tools
+FROM hetznercloud-tools-builder AS hetznercloud-tools-kpt-builder
+
+LABEL stage="hetznercloud-tools-kpt-builder" \
+      description="Debian-based container builder for preparing Hetzner Cloud tool kpt CLI" \
+      org.opencontainers.image.description="Debian-based container builder for preparing Hetzner Cloud tool kpt CLI" \
+      org.opencontainers.image.url=https://github.com/stefanbosak/hetznercloud-tools \
+      org.opencontainers.image.source=https://github.com/stefanbosak/hetznercloud-tools
+
+ARG TARGETOS
+ARG TARGETARCH
+ARG KPT_CLI_VERSION
+
+ARG WORKSPACE_ROOT_DIR
+WORKDIR "${WORKSPACE_ROOT_DIR}"
+
+# download kpt CLI binary file (https://github.com/kptdev/kpt)
+ADD "https://github.com/kptdev/kpt/releases/download/${KPT_CLI_VERSION}/kpt_${TARGETOS}_${TARGETARCH}" "${WORKSPACE_ROOT_DIR}/"
+
+# install kpt
+RUN mkdir -p "/usr/local/bin/" && install -v -o root -g root -m 0755 "${WORKSPACE_ROOT_DIR}/kpt_${TARGETOS}_${TARGETARCH}" "/usr/local/bin/kpt"
+
+
+# container as builder for preparing Hetzner Cloud tools
 FROM hetznercloud-tools-builder AS hetznercloud-tools-kubectl-builder
 
 LABEL stage="hetznercloud-tools-kubectl-builder" \
@@ -406,6 +432,7 @@ COPY --from=hetznercloud-tools-hcloud-cli-builder "/usr/local/bin/" "/usr/local/
 COPY --from=hetznercloud-tools-helm-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-k9s-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-kops-builder "/usr/local/bin/" "/usr/local/bin/"
+COPY --from=hetznercloud-tools-kpt-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-kubectl-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-kustomize-builder "/usr/local/bin/" "/usr/local/bin/"
 COPY --from=hetznercloud-tools-sofka-builder "/usr/local/bin/" "/usr/local/bin/"
