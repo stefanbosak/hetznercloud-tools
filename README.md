@@ -28,10 +28,10 @@
 | **Sofka** | [`v0.29.3`](https://github.com/nklmilojevic/sofka/releases/tag/v0.29.3) |
 | **SwarmCLI** | [`v2.1.1`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.1.1) |
 | **Terraform** | [`1.17.0-beta2`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2) |
-| **OpenTofu** | [`1.13.0-rc1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.0-rc1) |
+| **OpenTofu** | [`1.12.6`](https://github.com/opentofu/opentofu/releases/tag/v1.12.6) |
 | **Terragrunt** | [`v1.2.0-rc1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.0-rc1) |
 
-> 🔄 Last updated: 2026-09-27T00:22:54+02:00 · [Build #133](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/36284412285)
+> 🔄 Last updated: 2026-09-27T03:07:48+02:00 · [Build #134](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/36478747346)
 <!-- VERSION_INFO_END -->
 
 ---
