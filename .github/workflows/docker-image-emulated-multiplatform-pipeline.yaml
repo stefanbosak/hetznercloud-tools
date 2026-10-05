@@ -18,7 +18,7 @@ on:
         description: 'ANSIBLE_CLI_VERSION'
         required: false
         type: string
-        default: 'v2.22.0b2'
+        default: 'v2.21.5'
       CM_CTL_CLI_VERSION:
         description: 'CM_CTL_CLI_VERSION'
         required: false
@@ -28,7 +28,7 @@ on:
         description: 'HCLOUD_CLI_VERSION'
         required: false
         type: string
-        default: 'v1.69.0'
+        default: 'v1.70.0'
       HELM_CLI_VERSION:
         description: 'HELM_CLI_VERSION'
         required: false
