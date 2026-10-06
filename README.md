@@ -18,20 +18,20 @@
 |-----------|---------|
 | **Ansible** | [`v2.21.5`](https://github.com/ansible/ansible/releases/tag/v2.21.5) |
 | **cert-manager CLI** | [`v2.6.1`](https://github.com/cert-manager/cmctl/releases/tag/v2.6.1) |
-| **hcloud CLI** | [`v1.70.0`](https://github.com/hetznercloud/cli/releases/tag/v1.70.0) |
+| **hcloud CLI** | [`v1.70.1`](https://github.com/hetznercloud/cli/releases/tag/v1.70.1) |
 | **Helm** | [`v4.3.0`](https://github.com/helm/helm/releases/tag/v4.3.0) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
 | **Kops** | [`v1.37.0-beta.1`](https://github.com/kubernetes/kops/releases/tag/v1.37.0-beta.1) |
 | **Kpt** | [`v1.0.2-pre.1`](https://github.com/kptdev/kpt/releases/tag/v1.0.2-pre.1) |
 | **Kubectl** | [`v1.38.0-alpha.1`](https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.1) |
 | **Kustomize** | [`5.8.2`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.2) |
-| **Sofka** | [`v0.29.9`](https://github.com/nklmilojevic/sofka/releases/tag/v0.29.9) |
+| **Sofka** | [`v0.29.10`](https://github.com/nklmilojevic/sofka/releases/tag/v0.29.10) |
 | **SwarmCLI** | [`v2.2.0-rc2`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.2.0-rc2) |
 | **Terraform** | [`1.16.5`](https://github.com/hashicorp/terraform/releases/tag/v1.16.5) |
 | **OpenTofu** | [`1.13.1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.1) |
 | **Terragrunt** | [`v1.2.0-rc1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.0-rc1) |
 
-> 🔄 Last updated: 2026-10-04T16:08:18+02:00 · [Build #151](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/37340982768)
+> 🔄 Last updated: 2026-10-05T18:31:31+02:00 · [Build #153](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/37449585718)
 <!-- VERSION_INFO_END -->
 
 ---
