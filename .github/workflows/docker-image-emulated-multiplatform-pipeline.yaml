@@ -58,7 +58,7 @@ on:
         description: 'KUSTOMIZE_CLI_VERSION'
         required: false
         type: string
-        default: '5.8.2'
+        default: '5.8.3'
       SOFKA_CLI_VERSION:
         description: 'SOFKA_CLI_VERSION'
         required: false
