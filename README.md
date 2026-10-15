@@ -25,13 +25,13 @@
 | **Kpt** | [`v1.0.2-pre.2`](https://github.com/kptdev/kpt/releases/tag/v1.0.2-pre.2) |
 | **Kubectl** | [`v1.38.0-alpha.2`](https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.2) |
 | **Kustomize** | [`5.8.3`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.3) |
-| **Sofka** | [`v0.31.9`](https://github.com/nklmilojevic/sofka/releases/tag/v0.31.9) |
+| **Sofka** | [`v0.31.10`](https://github.com/nklmilojevic/sofka/releases/tag/v0.31.10) |
 | **SwarmCLI** | [`v2.2.0-rc4`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.2.0-rc4) |
 | **Terraform** | [`1.17.0-rc2`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc2) |
 | **OpenTofu** | [`1.13.1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.1) |
 | **Terragrunt** | [`v1.2.0-rc2`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.0-rc2) |
 
-> 🔄 Last updated: 2026-10-14T16:27:59+02:00 · [Build #172](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/38671370824)
+> 🔄 Last updated: 2026-10-15T04:34:32+02:00 · [Build #173](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/38735474787)
 <!-- VERSION_INFO_END -->
 
 ---
