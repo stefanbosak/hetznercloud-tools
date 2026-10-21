@@ -63,7 +63,7 @@ on:
         description: 'SOFKA_CLI_VERSION'
         required: false
         type: string
-        default: 'v0.31.13'
+        default: 'v0.31.14'
       SWARM_CLI_VERSION:
         description: 'SWARM_CLI_VERSION'
         required: false
@@ -78,12 +78,12 @@ on:
         description: 'OPENTOFU_CLI_VERSION'
         required: false
         type: string
-        default: '1.13.1'
+        default: '1.13.2'
       TERRAGRUNT_CLI_VERSION:
         description: 'TERRAGRUNT_CLI_VERSION'
         required: false
         type: string
-        default: 'v1.2.0-rc3'
+        default: 'v1.2.0'
       CONTAINER_TAG:
         description: 'CONTAINER_TAG'
         required: false
