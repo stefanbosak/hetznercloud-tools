@@ -29,9 +29,9 @@
 | **SwarmCLI** | [`v2.2.0`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.2.0) |
 | **Terraform** | [`1.17.0`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0) |
 | **OpenTofu** | [`1.13.2`](https://github.com/opentofu/opentofu/releases/tag/v1.13.2) |
-| **Terragrunt** | [`v1.2.0`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.0) |
+| **Terragrunt** | [`v1.2.1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.1) |
 
-> 🔄 Last updated: 2026-10-22T20:29:23+02:00 · [Build #186](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/39986826892)
+> 🔄 Last updated: 2026-10-23T18:29:58+02:00 · [Build #187](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/40018737114)
 <!-- VERSION_INFO_END -->
 
 ---
