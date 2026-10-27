@@ -16,7 +16,7 @@
 <!-- VERSION_INFO_START -->
 | Component | Version |
 |-----------|---------|
-| **Ansible** | [`v2.22.0rc1`](https://github.com/ansible/ansible/releases/tag/v2.22.0rc1) |
+| **Ansible** | [`v2.22.0rc2`](https://github.com/ansible/ansible/releases/tag/v2.22.0rc2) |
 | **cert-manager CLI** | [`v2.6.2`](https://github.com/cert-manager/cmctl/releases/tag/v2.6.2) |
 | **hcloud CLI** | [`v1.70.2`](https://github.com/hetznercloud/cli/releases/tag/v1.70.2) |
 | **Helm** | [`v4.3.1`](https://github.com/helm/helm/releases/tag/v4.3.1) |
@@ -31,7 +31,7 @@
 | **OpenTofu** | [`1.13.2`](https://github.com/opentofu/opentofu/releases/tag/v1.13.2) |
 | **Terragrunt** | [`v1.2.1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.1) |
 
-> 🔄 Last updated: 2026-10-23T22:26:29+02:00 · [Build #188](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/40530845882)
+> 🔄 Last updated: 2026-10-27T16:31:26+01:00 · [Build #189](https://github.com/stefanbosak/hetznercloud-tools/actions/runs/40567372946)
 <!-- VERSION_INFO_END -->
 
 ---
