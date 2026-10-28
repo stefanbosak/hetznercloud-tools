@@ -73,7 +73,7 @@ on:
         description: 'TERRAFORM_CLI_VERSION'
         required: false
         type: string
-        default: '1.17.0'
+        default: '1.17.1'
       OPENTOFU_CLI_VERSION:
         description: 'OPENTOFU_CLI_VERSION'
         required: false
